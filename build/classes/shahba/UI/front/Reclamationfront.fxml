@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="displayArea" prefHeight="900.0" prefWidth="1500.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shahba.UI.front.ReclamationfrontController">
+    <stylesheets>
+        <URL value="@reclamationfront.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="tfnomc" layoutX="348.0" layoutY="93.0" />
+      <TextField fx:id="tfpnomc" layoutX="348.0" layoutY="161.0" />
+      <TextField fx:id="tfnumclient" layoutX="348.0" layoutY="221.0" />
+      <TextField fx:id="tfmailc" layoutX="348.0" layoutY="309.0" />
+      <TextField fx:id="tfobrc" layoutX="348.0" layoutY="375.0" />
+      <TextField fx:id="tfdesrec" layoutX="348.0" layoutY="457.0" prefHeight="50.0" prefWidth="222.0" />
+      <Button layoutX="359.0" layoutY="706.0" mnemonicParsing="false" onAction="#modifierReclamation" style="-fx-background-color: #9ACD32;" text="modifier" textFill="WHITE" />
+      <Label layoutX="371.0" layoutY="52.0" text="Nom" />
+      <Label layoutX="371.0" layoutY="133.0" text="Prénom" />
+      <Label layoutX="371.0" layoutY="195.0" text="Numéro client" />
+      <Label layoutX="371.0" layoutY="276.0" text="Adresse Email" />
+      <Label layoutX="371.0" layoutY="345.0" text="Objet de reclamation" />
+      <Label layoutX="371.0" layoutY="428.0" text="Description" />
+      <ChoiceBox fx:id="cbtypereclamation_id" layoutX="348.0" layoutY="561.0" prefWidth="150.0" style="-fx-background-color: #9ACD32;" />
+      <Label layoutX="371.0" layoutY="525.0" text="Type reclamation" />
+      <Label fx:id="LAffiche" layoutX="561.0" layoutY="224.0" prefHeight="223.0" prefWidth="254.0" />
+      <ImageView fx:id="imview" fitHeight="173.0" fitWidth="222.0" layoutX="580.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="upload" layoutX="646.0" layoutY="419.0" mnemonicParsing="false" onAction="#AjouterPhoto" style="-fx-background-color: #9ACD32;" text="upload image" textFill="WHITE" />
+      <TextField fx:id="txtimage" layoutX="620.0" layoutY="366.0" mouseTransparent="true" />
+      <Label layoutX="432.0" layoutY="20.0" prefHeight="32.0" prefWidth="390.0" text="consulter et modifier vos reclamations" textFill="#796969">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="900.0" prefWidth="287.0" style="-fx-background-color: #9ACD32;">
+         <children>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="-3.0" layoutY="211.0" mnemonicParsing="false" onAction="#commande" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Commande" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="-3.0" layoutY="146.0" mnemonicParsing="false" onAction="#profile" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Mon profil" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="817.0" mnemonicParsing="false" onAction="#Deconecterclient" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Se déconnecter" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="-3.0" layoutY="277.0" mnemonicParsing="false" onAction="#Reservation" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Mes reservations" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="358.0" mnemonicParsing="false" onAction="#Produit" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Produits" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="-3.0" layoutY="636.0" mnemonicParsing="false" onAction="#Reclamation" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Reclamations" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="-2.0" layoutY="558.0" mnemonicParsing="false" onAction="#Event" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Evenements" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="-3.0" layoutY="499.0" mnemonicParsing="false" onAction="#Video" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Vidéos DIY" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="433.0" mnemonicParsing="false" onAction="#Astuce" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Astuces" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="7.0" layoutY="28.0" mnemonicParsing="false" onAction="#Home" prefHeight="49.0" prefWidth="266.0" styleClass="button1" stylesheets="@../../values/style_1.css" text="Acceuil" textFill="WHITE">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="34.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="61.0" layoutX="188.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/logo_shahba.001.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shahba.UI.back.ProduitsController">
+   <children>
+      <TableView fx:id="coltabab" layoutX="14.0" layoutY="16.0" prefHeight="389.0" prefWidth="648.0">
+         <columns>
+            <TableColumn fx:id="ColTitre" prefWidth="111.0" text="Titre Article" />
+            <TableColumn fx:id="ColDesc" prefWidth="127.0" text="Description" />
+            <TableColumn fx:id="ColCat" minWidth="0.0" prefWidth="124.0" text="Catégorie" />
+            <TableColumn fx:id="Colimg" prefWidth="104.0" text="Photo" />
+            <TableColumn fx:id="colprix" prefWidth="104.0" text="Prix" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

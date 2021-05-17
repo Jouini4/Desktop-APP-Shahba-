@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="nh" onDragDetected="#clck" prefHeight="234.0" prefWidth="750.0" style="-fx-background-color: #cdb332;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shahba.UI.front.ItemAhmedController">
+   <children>
+      <Label fx:id="nomlab" layoutX="211.0" layoutY="166.0" prefHeight="34.0" prefWidth="227.0" text="time">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="112.0" layoutX="59.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/cannes.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="status" layoutX="211.0" layoutY="98.0" prefHeight="51.0" prefWidth="195.0" text="status">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font></Label>
+      <Label fx:id="labDescription" layoutX="211.0" layoutY="56.0" prefHeight="24.0" prefWidth="169.0" text="objet">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="consulterrec" layoutX="496.0" layoutY="86.0" mnemonicParsing="false" onAction="#selectitem" prefHeight="63.0" prefWidth="169.0" style="-fx-background-color: #9ACD32;" text="Consulter" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" fx:id="nh" onDragDetected="#clck" prefHeight="786.0" prefWidth="900.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shahba.UI.front.itemController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="1.0" prefHeight="588.0" prefWidth="900.0" style="-fx-background-color: #F5F5F5;" stylesheets="@../style/style.css" AnchorPane.bottomAnchor="344.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="56.0" prefWidth="225.0">
+               <children>
+                  <Label fx:id="nomlab" alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="558.0" text="Cannes" textFill="YELLOWGREEN">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Cambria Bold Italic" size="53.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ImageView fx:id="img" fitHeight="449.0" fitWidth="632.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/logo_shahba.001.jpg" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="85.0" prefWidth="900.0">
+               <children>
+                  <Label fx:id="labDescription" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="810.0" text="DESCRIPTION" />
+               </children></HBox>
+         </children>
+         <styleClass>
+            <String fx:value="fruit-item" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </VBox>
+      <Rating fx:id="rate" layoutX="363.0" layoutY="637.0" />
+      <Button fx:id="rating_but" layoutX="409.0" layoutY="688.0" onAction="#Rate" style="-fx-background-color: #9ACD32;" text="Vote" />
+      <Label alignment="TOP_CENTER" layoutX="201.0" layoutY="595.0" prefHeight="30.0" prefWidth="467.0" text="Veuillez nous donner votre avis sur notre astuce" textFill="#9acd32fa">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="msg" layoutX="199.0" layoutY="756.0" prefHeight="108.0" prefWidth="520.0" />
+   </children>
+</AnchorPane>

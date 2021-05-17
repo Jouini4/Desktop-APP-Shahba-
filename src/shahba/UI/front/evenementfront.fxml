@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="displayArea" prefHeight="778.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shahba.UI.front.EvenementControllerfront">
+   <children>
+       
+      <AnchorPane layoutX="14.0" prefHeight="778.0" prefWidth="915.0">
+         <children>
+            <Button fx:id="btnRATE" layoutX="699.0" layoutY="523.0" mnemonicParsing="false" onAction="#RATE" style="-fx-background-color: #ffd60a;" text="Rate" />
+            <TableView fx:id="table" layoutX="1.0" layoutY="148.0" prefHeight="573.0" prefWidth="568.0">
+              <columns>
+                <TableColumn fx:id="ev_name" prefWidth="117.0" text="nom de l'evenement" />
+                <TableColumn fx:id="ev_descr" prefWidth="111.0" text="description" />
+                  <TableColumn fx:id="ev_adresse" prefWidth="85.0" text="adresse" />
+                  <TableColumn fx:id="event_date" minWidth="9.0" prefWidth="76.0" text="date" />
+                  <TableColumn fx:id="event_prix" prefWidth="68.0" text="prix" />
+                  <TableColumn fx:id="event_amount" prefWidth="58.0" text="nombre de places" />
+                  <TableColumn fx:id="event_image" minWidth="1.0" prefWidth="52.0" text="image" />
+                  <TableColumn fx:id="tableau_longitude" prefWidth="75.0" text="longitude" />
+                  <TableColumn fx:id="tableau_latitude" prefWidth="75.0" text="latitude" />
+              </columns>
+            </TableView>
+            <TextField fx:id="recherche" layoutX="69.0" layoutY="105.0" promptText="Rechercher..." />
+            <Label layoutX="341.0" layoutY="23.0" prefHeight="63.0" prefWidth="260.0" text=" List Des Evenements" textAlignment="RIGHT" textFill="#8033d3">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgv5" fitHeight="26.0" fitWidth="42.0" layoutX="36.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../PI__Islem/Pi/src/icons/téléchargement%20(1).png" />
+               </image>
+            </ImageView>
+<Button fx:id="btnmap" layoutX="667.0" layoutY="631.0" mnemonicParsing="false" onAction="#SeeLocation" style="-fx-background-color: #adb5bd;" text="check location" />
+            <Button layoutX="692.0" layoutY="572.0" mnemonicParsing="false" onAction="#AjoutReservation" text="Reserver" />
+            <TextField fx:id="r_nbrplace" layoutX="624.0" layoutY="358.0" promptText="nombre ticket" />
+            <TextField fx:id="r_utilisateur" layoutX="624.0" layoutY="435.0" promptText="utilisateur" />
+            <TextField fx:id="evt_adresse" layoutX="647.0" layoutY="222.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnBack" layoutX="30.0" layoutY="734.0" mnemonicParsing="false" onAction="#Back" text="Retour" />
+      <TextField fx:id="txt_longitude" layoutX="693.0" layoutY="18.0" />
+      <TextField fx:id="txt_latitude" layoutX="699.0" layoutY="62.0" />
+      
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="par" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: white;" styleClass="blue-panel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfclientController">
+   <children>
+      <Label layoutX="442.0" layoutY="222.0" prefHeight="34.0" prefWidth="163.0" text="     Profil" textFill="YELLOWGREEN">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="139.0" prefHeight="34.0" prefWidth="480.0" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <HBox alignment="CENTER_LEFT" layoutY="202.0" prefHeight="34.0" prefWidth="480.0" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="263.0" prefHeight="34.0" prefWidth="480.0" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="333.0" prefHeight="34.0" prefWidth="480.0" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <HBox layoutX="12.0" layoutY="233.0" prefHeight="20.0" prefWidth="480.0">
+         <children>
+            <Label fx:id="tsh" prefHeight="17.0" prefWidth="60.0" textFill="RED">
+               <HBox.margin>
+                  <Insets left="220.0" />
+               </HBox.margin></Label>
+            <Label fx:id="sh" prefHeight="17.0" prefWidth="60.0" textFill="#ff7300" />
+            <Label fx:id="m" prefHeight="17.0" prefWidth="60.0" textFill="#fffb00" />
+            <Label fx:id="f" prefHeight="17.0" prefWidth="60.0" textFill="#00ff09" />
+         </children>
+      </HBox>
+      <HBox layoutX="12.0" layoutY="173.0" prefHeight="21.0" prefWidth="480.0">
+         <children>
+            <Label fx:id="vmail" prefHeight="17.0" prefWidth="240.0" textFill="#2296f3">
+               <HBox.margin>
+                  <Insets left="220.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <JFXButton layoutX="271.0" layoutY="479.0" onAction="#modify" prefHeight="25.0" prefWidth="485.0" style="-fx-background-color: #9ACD32;" styleClass="blue-btn" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" text="Modify" />
+      <TextField fx:id="text_address" layoutX="553.0" layoutY="413.0" prefHeight="28.0" prefWidth="232.0" promptText="Address" styleClass="tf_box" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <TextField fx:id="text_tel" layoutX="259.0" layoutY="413.0" prefHeight="32.0" prefWidth="198.0" promptText="Phone Number" styleClass="tf_box" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <PasswordField fx:id="text_mdp" layoutX="553.0" layoutY="362.0" onMouseClicked="#pass" prefHeight="31.0" prefWidth="220.0" promptText="Password" styleClass="tf_box" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <TextField fx:id="text_cin" layoutX="252.0" layoutY="362.0" prefHeight="32.0" prefWidth="198.0" promptText="CIN" styleClass="tf_box" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <TextField fx:id="text_mail" layoutX="553.0" layoutY="305.0" prefHeight="26.0" prefWidth="220.0" promptText="Email" styleClass="tf_box" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <TextField fx:id="text_nom" layoutX="252.0" layoutY="305.0" prefHeight="32.0" prefWidth="198.0" promptText="UserName" styleClass="tf_box" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" />
+      <Pane layoutX="49.0" layoutY="-209.0" prefHeight="306.0" prefWidth="407.0" rotate="41.6" style="-fx-background-color: #9ACD32; -fx-background-radius: 70;" />
+      <JFXButton layoutX="271.0" layoutY="522.0" onAction="#Home" prefHeight="25.0" prefWidth="485.0" style="-fx-background-color: #9ACD32;" styleClass="blue-btn" stylesheets="@../../../../../Desktop/pi/back/src/sample/styles.css" text="EXIT" />
+   </children>
+</AnchorPane>

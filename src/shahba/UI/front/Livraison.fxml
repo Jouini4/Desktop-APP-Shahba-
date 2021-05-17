@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="displayArea" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shahba.UI.front.LivraisonController">
+   <children>
+      <VBox alignment="CENTER" layoutX="122.0" layoutY="41.0" spacing="45.0">
+         <children>
+            <Label fx:id="nom" alignment="CENTER" contentDisplay="CENTER" text="nom" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="prenom" alignment="CENTER" contentDisplay="CENTER" text="prenom" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="adresse" alignment="CENTER" contentDisplay="CENTER" text="adresse" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="numero_telehphone" alignment="CENTER" contentDisplay="CENTER" text="numero telephone" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox layoutX="6.0" layoutY="293.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #9ACD32;" styleClass="dangerBtn" stylesheets="@../../css/style.css" text="Retour" textFill="WHITE" />
+            <Button fx:id="paiement" mnemonicParsing="false" onAction="#Paiement" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #9ACD32;" styleClass="goBtn" stylesheets="@../../css/style.css" text="Paiement" textFill="WHITE" />
+            <Button fx:id="pdf" mnemonicParsing="false" onAction="#pdflivraison" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #9ACD32;" styleClass="button3" stylesheets="@../../css/style.css" text="Telecharger PDF" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>
